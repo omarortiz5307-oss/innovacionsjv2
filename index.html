@@ -17,6 +17,60 @@
             padding: 0;
         }
 
+        /* Estilos para los contenedores de mapas de imagen */
+    .image-map-container {
+        text-align: center;
+        margin: 60px auto;
+        max-width: 1200px;
+        padding: 0 20px;
+    }
+
+    .image-map-container h2 {
+        font-size: 2.5em;
+        margin-bottom: 30px;
+        color: #333;
+    }
+
+    .image-map-wrapper {
+        display: inline-block;
+        border-radius: 15px;
+        box-shadow: 0 8px 30px rgba(138, 43, 226, 0.2);
+        overflow: hidden;
+        transition: all 0.3s ease;
+        background: white;
+        padding: 20px;
+    }
+
+    .image-map-wrapper:hover {
+        box-shadow: 0 12px 40px rgba(138, 43, 226, 0.3);
+        transform: translateY(-5px);
+    }
+
+    .image-map-wrapper img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 10px;
+    }
+
+    /* Espaciado entre secciones */
+    .map-section {
+        background: linear-gradient(135deg, #f9f9f9, white);
+        padding: 60px 20px;
+        margin: 40px 0;
+        border-radius: 20px;
+    }
+
+    @media (max-width: 768px) {
+        .image-map-container h2 {
+            font-size: 2em;
+        }
+        
+        .image-map-wrapper {
+            padding: 15px;
+        }
+    }
+
         html {
             scroll-behavior: smooth;
             overflow-x: hidden;
@@ -1269,17 +1323,115 @@
     </section>
 
     <section>
-        <h2>Libro de visitas</h2><p>
-            <form action="malito:email" method="post" enctype="text/plain">
-                Tu nombre:
-                <br><input type="text" name="nombre">
-                <p>Escribe tus comentarios:<br>
-                <textarea name="comentarios" rows="6" cols="40">
-                </textarea><p>
-                <input type="submit" value="Enviar datos">
-                <input type="reset" value="Borrar datos">
-            </form>
-            <p><hr>
+        <section class="map-section">
+            <div class="image-map-container">
+                <h2>Sígueme en <span class="color-acento">Instagram</span></h2>
+                
+                <div class="image-map-wrapper">
+                    <!-- Imagen del logo de Instagram con mapa de áreas clicables -->
+                    <img class="img" 
+                         src="https://1000marcas.net/wp-content/uploads/2019/11/Instagram-Logosu.png" 
+                         alt="Logo de Instagram" 
+                         usemap="#instagram-map">
+                    
+                    <!-- Definición del mapa de imagen -->
+                    <map name="instagram-map">
+                        
+                        <!-- Área del ícono de cámara (parte superior izquierda) -->
+                        <area shape="rect" 
+                              coords="20, 150, 100, 250" 
+                              href="https://www.instagram.com/omar_ortiz.wav?igsh=dXZteTRqYzFtcDdo" 
+                              alt="Sígueme en Instagram - Ícono"
+                              title="Visita mi perfil de Instagram"
+                              target="_blank">
+                        
+                        <!-- Área central del logo -->
+                        <area shape="rect" 
+                              coords="150, 100, 350, 350" 
+                              href="https://www.instagram.com/omar_ortiz.wav?igsh=dXZteTRqYzFtcDdo" 
+                              alt="Sígueme en Instagram - Centro"
+                              title="Visita mi perfil de Instagram"
+                              target="_blank">
+                        
+                        <!-- Área circular (puede ser el círculo interno del logo) -->
+                        <area shape="circle" 
+                              coords="400, 400, 60" 
+                              href="https://www.instagram.com/omar_ortiz.wav?igsh=dXZteTRqYzFtcDdo" 
+                              alt="Sígueme en Instagram - Círculo"
+                              title="Visita mi perfil de Instagram"
+                              target="_blank">
+                        
+                        <!-- Área por defecto (cualquier otra parte de la imagen) -->
+                        <area shape="default" 
+                              href="https://www.instagram.com/omar_ortiz.wav?igsh=dXZteTRqYzFtcDdo" 
+                              alt="Sígueme en Instagram"
+                              title="Visita mi perfil de Instagram"
+                              target="_blank">
+                    </map>
+                </div>
+                
+                <p style="margin-top: 20px; color: #666; font-size: 1.1em;">
+                    Haz clic en cualquier parte del logo para visitar mi perfil 📸
+                </p>
+            </div>
+        </section>
+        
+        <style>
+            /* Estilos específicos para el mapa de Instagram */
+            .image-map-container {
+                text-align: center;
+                margin: 60px auto;
+                max-width: 800px;
+                padding: 0 20px;
+            }
+        
+            .image-map-container h2 {
+                font-size: 2.5em;
+                margin-bottom: 30px;
+                color: #333;
+            }
+        
+            .image-map-wrapper {
+                display: inline-block;
+                border-radius: 15px;
+                box-shadow: 0 8px 30px rgba(225, 48, 108, 0.3);
+                overflow: hidden;
+                transition: all 0.3s ease;
+                background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+                padding: 20px;
+            }
+        
+            .image-map-wrapper:hover {
+                box-shadow: 0 12px 40px rgba(225, 48, 108, 0.5);
+                transform: translateY(-5px) scale(1.02);
+            }
+        
+            .image-map-wrapper img {
+                max-width: 100%;
+                height: auto;
+                display: block;
+                border-radius: 10px;
+                background: white;
+                padding: 10px;
+            }
+        
+            .map-section {
+                background: linear-gradient(135deg, #f9f9f9, white);
+                padding: 60px 20px;
+                margin: 40px 0;
+                border-radius: 20px;
+            }
+        
+            @media (max-width: 768px) {
+                .image-map-container h2 {
+                    font-size: 2em;
+                }
+                
+                .image-map-wrapper {
+                    padding: 15px;
+                }
+            }
+        </style>
     </section>
 
     <footer>
