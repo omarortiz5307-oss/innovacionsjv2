@@ -1,5 +1,6 @@
 <!DOCTYPE HTML>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +8,11 @@
     <title>Proyecto programación web 1</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&family=Montserrat:wght@400;600;700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <style>
         * {
@@ -18,58 +22,58 @@
         }
 
         /* Estilos para los contenedores de mapas de imagen */
-    .image-map-container {
-        text-align: center;
-        margin: 60px auto;
-        max-width: 1200px;
-        padding: 0 20px;
-    }
+        .image-map-container {
+            text-align: center;
+            margin: 60px auto;
+            max-width: 1200px;
+            padding: 0 20px;
+        }
 
-    .image-map-container h2 {
-        font-size: 2.5em;
-        margin-bottom: 30px;
-        color: #333;
-    }
-
-    .image-map-wrapper {
-        display: inline-block;
-        border-radius: 15px;
-        box-shadow: 0 8px 30px rgba(138, 43, 226, 0.2);
-        overflow: hidden;
-        transition: all 0.3s ease;
-        background: white;
-        padding: 20px;
-    }
-
-    .image-map-wrapper:hover {
-        box-shadow: 0 12px 40px rgba(138, 43, 226, 0.3);
-        transform: translateY(-5px);
-    }
-
-    .image-map-wrapper img {
-        max-width: 100%;
-        height: auto;
-        display: block;
-        border-radius: 10px;
-    }
-
-    /* Espaciado entre secciones */
-    .map-section {
-        background: linear-gradient(135deg, #f9f9f9, white);
-        padding: 60px 20px;
-        margin: 40px 0;
-        border-radius: 20px;
-    }
-
-    @media (max-width: 768px) {
         .image-map-container h2 {
-            font-size: 2em;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            color: #333;
         }
-        
+
         .image-map-wrapper {
-            padding: 15px;
+            display: inline-block;
+            border-radius: 15px;
+            box-shadow: 0 8px 30px rgba(138, 43, 226, 0.2);
+            overflow: hidden;
+            transition: all 0.3s ease;
+            background: white;
+            padding: 20px;
         }
-    }
+
+        .image-map-wrapper:hover {
+            box-shadow: 0 12px 40px rgba(138, 43, 226, 0.3);
+            transform: translateY(-5px);
+        }
+
+        .image-map-wrapper img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 10px;
+        }
+
+        /* Espaciado entre secciones */
+        .map-section {
+            background: linear-gradient(135deg, #f9f9f9, white);
+            padding: 60px 20px;
+            margin: 40px 0;
+            border-radius: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .image-map-container h2 {
+                font-size: 2em;
+            }
+
+            .image-map-wrapper {
+                padding: 15px;
+            }
+        }
 
         html {
             scroll-behavior: smooth;
@@ -84,15 +88,15 @@
             line-height: 1.6;
         }
 
-        h1 { 
+        h1 {
             font-size: 3.5em;
             font-weight: 900;
             letter-spacing: 2px;
-            text-shadow: 3px 3px 6px rgba(0,0,0,0.3);
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
             margin-bottom: 20px;
         }
 
-        h2 { 
+        h2 {
             font-size: 2.7em;
             font-weight: 700;
             margin-bottom: 25px;
@@ -111,7 +115,7 @@
             border-radius: 2px;
         }
 
-        h3 { 
+        h3 {
             font-size: 2em;
             margin-bottom: 15px;
             font-weight: 600;
@@ -124,7 +128,7 @@
             font-weight: 600;
         }
 
-        p { 
+        p {
             font-size: 1.25em;
             line-height: 1.8;
             margin-bottom: 20px;
@@ -136,13 +140,13 @@
             padding: 0;
         }
 
-        li { 
+        li {
             font-size: 1.25em;
             padding: 20px;
             margin: 15px 0;
             background: white;
             border-left: 5px solid blueviolet;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
             transition: all 0.3s ease;
             position: relative;
@@ -194,7 +198,7 @@
             width: 0;
             height: 0;
             border-radius: 50%;
-            background: rgba(255,255,255,0.2);
+            background: rgba(255, 255, 255, 0.2);
             transform: translate(-50%, -50%);
             transition: width 0.6s, height 0.6s;
             z-index: -1;
@@ -222,7 +226,7 @@
             padding: 0 20px;
         }
 
-        .color-acento { 
+        .color-acento {
             color: blueviolet;
             position: relative;
             display: inline-block;
@@ -240,16 +244,16 @@
         }
 
         header {
-            background: linear-gradient(135deg, rgba(245,245,245,0.98) 0%, rgba(255,255,255,0.95) 100%);
+            background: linear-gradient(135deg, rgba(245, 245, 245, 0.98) 0%, rgba(255, 255, 255, 0.95) 100%);
             backdrop-filter: blur(10px);
-            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
             z-index: 1000;
             transition: all 0.3s ease;
         }
 
         header.scrolled {
-            background: rgba(245,245,245,0.95);
-            box-shadow: 0 4px 30px rgba(0,0,0,0.15);
+            background: rgba(245, 245, 245, 0.95);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
         }
 
         header .logo {
@@ -315,15 +319,15 @@
         }
 
         #hero {
-            display: flex;       
+            display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
             flex-direction: column;
             height: 90vh;
             color: white;
-            background-image: 
-                linear-gradient(135deg, rgba(138, 43, 226, 0.7), rgba(0,0,0,0.5)),
+            background-image:
+                linear-gradient(135deg, rgba(138, 43, 226, 0.7), rgba(0, 0, 0, 0.5)),
                 url("https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200");
             background-repeat: no-repeat;
             background-size: cover;
@@ -340,7 +344,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: radial-gradient(circle at center, transparent 0%, rgba(0,0,0,0.3) 100%);
+            background: radial-gradient(circle at center, transparent 0%, rgba(0, 0, 0, 0.3) 100%);
             pointer-events: none;
         }
 
@@ -362,6 +366,7 @@
                 opacity: 0;
                 transform: translateY(-50px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -373,6 +378,7 @@
                 opacity: 0;
                 transform: translateY(50px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -386,7 +392,7 @@
 
         #que-es .img-container {
             border-radius: 20px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
             transition: transform 0.5s ease, box-shadow 0.5s ease;
             overflow: hidden;
             position: relative;
@@ -417,7 +423,7 @@
             background: white;
             padding: 40px;
             border-radius: 15px;
-            box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
             transition: all 0.3s ease;
         }
 
@@ -431,7 +437,7 @@
             padding: 80px 20px;
             margin: 40px 0;
             border-radius: 20px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
         }
 
         .section-detail h2 {
@@ -452,7 +458,7 @@
             padding: 30px;
             border-radius: 15px;
             border-left: 5px solid blueviolet;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
             transition: all 0.3s ease;
         }
 
@@ -485,13 +491,13 @@
             border-radius: 50px;
             font-weight: bold;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
         }
 
         .back-button:hover {
             background: linear-gradient(135deg, #555, #333);
             transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
         }
 
         #pros-contras {
@@ -524,7 +530,7 @@
             margin-top: 0;
             font-size: 3.2em;
             color: white;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
 
         #pros-contras p {
@@ -541,7 +547,7 @@
             position: relative;
             overflow: hidden;
             cursor: pointer;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
         }
 
         #pros-contras .carta::before {
@@ -551,13 +557,13 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: linear-gradient(135deg, rgba(138, 43, 226, 0.6), rgba(0,0,0,0.7));
+            background: linear-gradient(135deg, rgba(138, 43, 226, 0.6), rgba(0, 0, 0, 0.7));
             transition: all 0.5s ease;
             z-index: 0;
         }
 
         #pros-contras .carta:hover::before {
-            background: linear-gradient(135deg, rgba(138, 43, 226, 0.8), rgba(0,0,0,0.5));
+            background: linear-gradient(135deg, rgba(138, 43, 226, 0.8), rgba(0, 0, 0, 0.5));
         }
 
         #pros-contras .carta h3,
@@ -632,7 +638,7 @@
             margin-top: 0;
             font-size: 3.2em;
             color: white;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
 
         #aplicaciones p {
@@ -649,7 +655,7 @@
             position: relative;
             overflow: hidden;
             cursor: pointer;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
         }
 
         #aplicaciones .carta2::before {
@@ -659,13 +665,13 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: linear-gradient(135deg, rgba(138, 43, 226, 0.6), rgba(0,0,0,0.7));
+            background: linear-gradient(135deg, rgba(138, 43, 226, 0.6), rgba(0, 0, 0, 0.7));
             transition: all 0.5s ease;
             z-index: 0;
         }
 
         #aplicaciones .carta2:hover::before {
-            background: linear-gradient(135deg, rgba(138, 43, 226, 0.8), rgba(0,0,0,0.5));
+            background: linear-gradient(135deg, rgba(138, 43, 226, 0.8), rgba(0, 0, 0, 0.5));
         }
 
         #aplicaciones .carta2 h3,
@@ -700,7 +706,7 @@
         footer p {
             margin: 0;
             padding: 30px 12px;
-            color: rgba(255,255,255,0.7);
+            color: rgba(255, 255, 255, 0.7);
             font-size: 1.1em;
             text-align: center;
         }
@@ -823,16 +829,37 @@
         }
 
         @media (max-width: 719px) {
-            h1 { font-size: 2.5em; }
-            h2 { font-size: 2em; }
-            h3 { font-size: 1.5em; }
-            p { font-size: 1.1em; }
-            li { font-size: 1.1em; }
-            button { font-size: 1.2em; padding: 12px 25px; }
+            h1 {
+                font-size: 2.5em;
+            }
 
-            #hero { height: 70vh; }
-            
-            .carta, .carta2 { 
+            h2 {
+                font-size: 2em;
+            }
+
+            h3 {
+                font-size: 1.5em;
+            }
+
+            p {
+                font-size: 1.1em;
+            }
+
+            li {
+                font-size: 1.1em;
+            }
+
+            button {
+                font-size: 1.2em;
+                padding: 12px 25px;
+            }
+
+            #hero {
+                height: 70vh;
+            }
+
+            .carta,
+            .carta2 {
                 margin: 20px 10px;
                 padding: 50px 30px;
             }
@@ -851,16 +878,23 @@
             content: '↓';
             font-size: 2em;
             color: white;
-            text-shadow: 0 0 10px rgba(255,255,255,0.5);
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
         }
 
         @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% {
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
                 transform: translateX(-50%) translateY(0);
             }
+
             40% {
                 transform: translateX(-50%) translateY(-15px);
             }
+
             60% {
                 transform: translateX(-50%) translateY(-10px);
             }
@@ -875,6 +909,7 @@
                 <a href="#pros-contras">Pros y contras</a>
                 <a href="#caracteristicas">Características</a>
                 <a href="#aplicaciones">Aplicaciones</a>
+                <a href="#contacto">Contacto</a>
             </nav>
         </div>
     </header>
@@ -887,13 +922,17 @@
 
     <section id="que-es">
         <div class="container">
-            <div class="img-container"></div> 
+            <div class="img-container"></div>
             <div class="texto">
                 <h2>¿Qué <span class="color-acento">es?</span></h2>
-                <p>La innovación tecnológica es el proceso mediante el cual se desarrollan o mejoran tecnologías para crear nuevos productos, 
-                    servicios, procesos o métodos de producción que generen valor y resuelvan problemas de manera más eficiente, efectiva o novedosa.
-                    Es cuando se aplican conocimientos científicos y técnicos para introducir cambios significativos en herramientas, sistemas o procedimientos, 
-                    con el fin de mejorar la calidad de vida, aumentar la productividad o abrir nuevas oportunidades en diferentes sectores (como salud, educación, industria, transporte, etc.).</p>
+                <p>La innovación tecnológica es el proceso mediante el cual se desarrollan o mejoran tecnologías para
+                    crear nuevos productos,
+                    servicios, procesos o métodos de producción que generen valor y resuelvan problemas de manera más
+                    eficiente, efectiva o novedosa.
+                    Es cuando se aplican conocimientos científicos y técnicos para introducir cambios significativos en
+                    herramientas, sistemas o procedimientos,
+                    con el fin de mejorar la calidad de vida, aumentar la productividad o abrir nuevas oportunidades en
+                    diferentes sectores (como salud, educación, industria, transporte, etc.).</p>
             </div>
         </div>
     </section>
@@ -904,28 +943,28 @@
             <div class="programas">
                 <div class="carta">
                     <h3>Ventajas</h3>
-                    <p>Ha traído grandes beneficios, como una mayor eficiencia 
-                        en el trabajo, mejoras en la salud, acceso rápido a la 
-                        información y nuevas formas de comunicación global. 
-                        También ha creado empleos en sectores emergentes y ha 
+                    <p>Ha traído grandes beneficios, como una mayor eficiencia
+                        en el trabajo, mejoras en la salud, acceso rápido a la
+                        información y nuevas formas de comunicación global.
+                        También ha creado empleos en sectores emergentes y ha
                         facilitado el aprendizaje y la conexión entre personas.</p>
                     <button onclick="location.href='#ventajas-detalle'">Más aquí</button>
                 </div>
                 <div class="carta">
                     <h3>Desventajas</h3>
-                    <p>Ha aumentado la desigualdad digital, desplazado 
-                        empleos tradicionales por automatización y generado 
-                        dependencia tecnológica. Además, plantea riesgos 
-                        para la privacidad, contribuye a la contaminación 
-                        ambiental y puede afectar negativamente la salud mental 
+                    <p>Ha aumentado la desigualdad digital, desplazado
+                        empleos tradicionales por automatización y generado
+                        dependencia tecnológica. Además, plantea riesgos
+                        para la privacidad, contribuye a la contaminación
+                        ambiental y puede afectar negativamente la salud mental
                         y las relaciones sociales.</p>
                     <button onclick="location.href='#desventajas-detalle'">Más aquí</button>
                 </div>
                 <div class="carta">
                     <h3>Curiosidades</h3>
-                    <p>La primera computadora era enorme y pesaba toneladas, muy 
-                        lejos de los dispositivos actuales. Muchas tecnologías como 
-                        el GPS o Internet surgieron para uso militar. Algunos inventos 
+                    <p>La primera computadora era enorme y pesaba toneladas, muy
+                        lejos de los dispositivos actuales. Muchas tecnologías como
+                        el GPS o Internet surgieron para uso militar. Algunos inventos
                         importantes, como el microondas, fueron accidentes.</p>
                     <button onclick="location.href='#curiosidades-detalle'">Más aquí</button>
                 </div>
@@ -937,54 +976,68 @@
         <div class="container">
             <a href="#pros-contras" class="back-button">← Volver</a>
             <h2>Ventajas de la <span class="color-acento">Innovación Tecnológica</span></h2>
-            
+
             <div class="content-grid">
                 <div class="detail-card">
                     <div class="icon-box">⚡</div>
                     <h4>Mayor Eficiencia Productiva</h4>
-                    <p>La automatización de procesos industriales y la digitalización de servicios han permitido ahorrar tiempo significativo, reducir errores humanos y aumentar exponencialmente la productividad en todos los sectores económicos.</p>
+                    <p>La automatización de procesos industriales y la digitalización de servicios han permitido ahorrar
+                        tiempo significativo, reducir errores humanos y aumentar exponencialmente la productividad en
+                        todos los sectores económicos.</p>
                 </div>
-                
+
                 <div class="detail-card">
                     <div class="icon-box">📚</div>
                     <h4>Democratización del Conocimiento</h4>
-                    <p>El acceso a la información y al conocimiento se ha expandido globalmente, abriendo oportunidades educativas para millones de personas que anteriormente estaban excluidas del sistema educativo tradicional.</p>
+                    <p>El acceso a la información y al conocimiento se ha expandido globalmente, abriendo oportunidades
+                        educativas para millones de personas que anteriormente estaban excluidas del sistema educativo
+                        tradicional.</p>
                 </div>
-                
+
                 <div class="detail-card">
                     <div class="icon-box">🌐</div>
                     <h4>Comunicación Global Instantánea</h4>
-                    <p>La tecnología ha facilitado la comunicación en tiempo real entre personas de diferentes partes del mundo, fortaleciendo redes sociales, profesionales y culturales sin barreras geográficas.</p>
+                    <p>La tecnología ha facilitado la comunicación en tiempo real entre personas de diferentes partes
+                        del mundo, fortaleciendo redes sociales, profesionales y culturales sin barreras geográficas.
+                    </p>
                 </div>
-                
+
                 <div class="detail-card">
                     <div class="icon-box">🏥</div>
                     <h4>Avances en Salud y Medicina</h4>
-                    <p>Los desarrollos tecnológicos han revolucionado el sector salud con diagnósticos más precisos, tratamientos personalizados, cirugías robóticas y mejoras sustanciales en la esperanza y calidad de vida de las personas.</p>
+                    <p>Los desarrollos tecnológicos han revolucionado el sector salud con diagnósticos más precisos,
+                        tratamientos personalizados, cirugías robóticas y mejoras sustanciales en la esperanza y calidad
+                        de vida de las personas.</p>
                 </div>
-                
+
                 <div class="detail-card">
                     <div class="icon-box">💼</div>
                     <h4>Creación de Nuevos Empleos</h4>
-                    <p>La innovación tecnológica ha impulsado la creación de sectores económicos completamente nuevos, generando millones de empleos en áreas como desarrollo de software, inteligencia artificial, ciberseguridad y energías renovables.</p>
+                    <p>La innovación tecnológica ha impulsado la creación de sectores económicos completamente nuevos,
+                        generando millones de empleos en áreas como desarrollo de software, inteligencia artificial,
+                        ciberseguridad y energías renovables.</p>
                 </div>
-                
+
                 <div class="detail-card">
                     <div class="icon-box">🌱</div>
                     <h4>Soluciones Sostenibles</h4>
-                    <p>Las nuevas tecnologías están permitiendo desarrollar soluciones más sostenibles para problemas ambientales, incluyendo energías limpias, agricultura de precisión y sistemas de reciclaje avanzados.</p>
+                    <p>Las nuevas tecnologías están permitiendo desarrollar soluciones más sostenibles para problemas
+                        ambientales, incluyendo energías limpias, agricultura de precisión y sistemas de reciclaje
+                        avanzados.</p>
                 </div>
-                
+
                 <div class="detail-card">
                     <div class="icon-box">🎓</div>
                     <h4>Educación Personalizada</h4>
-                    <p>Las plataformas digitales y herramientas de aprendizaje adaptativo permiten experiencias educativas personalizadas, ajustándose al ritmo y estilo de aprendizaje de cada estudiante.</p>
+                    <p>Las plataformas digitales y herramientas de aprendizaje adaptativo permiten experiencias
+                        educativas personalizadas, ajustándose al ritmo y estilo de aprendizaje de cada estudiante.</p>
                 </div>
-                
+
                 <div class="detail-card">
                     <div class="icon-box">🚀</div>
                     <h4>Innovación Continua</h4>
-                    <p>La tecnología impulsa un ciclo virtuoso de innovación donde cada avance sirve como base para desarrollos futuros más sofisticados, acelerando el progreso humano.</p>
+                    <p>La tecnología impulsa un ciclo virtuoso de innovación donde cada avance sirve como base para
+                        desarrollos futuros más sofisticados, acelerando el progreso humano.</p>
                 </div>
             </div>
         </div>
@@ -994,54 +1047,69 @@
         <div class="container">
             <a href="#pros-contras" class="back-button">← Volver</a>
             <h2>Desventajas de la <span class="color-acento">Innovación Tecnológica</span></h2>
-            
+
             <div class="content-grid">
                 <div class="detail-card">
                     <div class="icon-box">📊</div>
                     <h4>Brecha Digital</h4>
-                    <p>No todas las personas tienen el mismo acceso a las tecnologías ni la capacitación necesaria para aprovecharlas, generando una profunda desigualdad entre quienes están integrados al mundo tecnológico y quienes quedan rezagados.</p>
+                    <p>No todas las personas tienen el mismo acceso a las tecnologías ni la capacitación necesaria para
+                        aprovecharlas, generando una profunda desigualdad entre quienes están integrados al mundo
+                        tecnológico y quienes quedan rezagados.</p>
                 </div>
-                
+
                 <div class="detail-card">
                     <div class="icon-box">🤖</div>
                     <h4>Desplazamiento Laboral</h4>
-                    <p>La automatización y la inteligencia artificial están eliminando numerosos empleos tradicionales, especialmente aquellos que implican tareas repetitivas, provocando inseguridad laboral y desafíos en la reconversión profesional.</p>
+                    <p>La automatización y la inteligencia artificial están eliminando numerosos empleos tradicionales,
+                        especialmente aquellos que implican tareas repetitivas, provocando inseguridad laboral y
+                        desafíos en la reconversión profesional.</p>
                 </div>
-                
+
                 <div class="detail-card">
                     <div class="icon-box">🌍</div>
                     <h4>Impacto Medioambiental</h4>
-                    <p>La producción masiva de dispositivos electrónicos, su corta vida útil y el manejo inadecuado de residuos tecnológicos (e-waste) contribuyen significativamente a la contaminación y agotamiento de recursos naturales.</p>
+                    <p>La producción masiva de dispositivos electrónicos, su corta vida útil y el manejo inadecuado de
+                        residuos tecnológicos (e-waste) contribuyen significativamente a la contaminación y agotamiento
+                        de recursos naturales.</p>
                 </div>
-                
+
                 <div class="detail-card">
                     <div class="icon-box">🧠</div>
                     <h4>Problemas de Salud Mental</h4>
-                    <p>La dependencia excesiva de la tecnología puede generar adicción digital, aislamiento social, ansiedad, depresión y pérdida de habilidades sociales básicas, especialmente en generaciones jóvenes.</p>
+                    <p>La dependencia excesiva de la tecnología puede generar adicción digital, aislamiento social,
+                        ansiedad, depresión y pérdida de habilidades sociales básicas, especialmente en generaciones
+                        jóvenes.</p>
                 </div>
-                
+
                 <div class="detail-card">
                     <div class="icon-box">🔒</div>
                     <h4>Amenazas a la Privacidad</h4>
-                    <p>Los datos personales son constantemente recolectados, analizados y a menudo vendidos sin el consentimiento pleno de los usuarios, exponiendo información sensible a posibles vulneraciones y uso indebido.</p>
+                    <p>Los datos personales son constantemente recolectados, analizados y a menudo vendidos sin el
+                        consentimiento pleno de los usuarios, exponiendo información sensible a posibles vulneraciones y
+                        uso indebido.</p>
                 </div>
-                
+
                 <div class="detail-card">
                     <div class="icon-box">👁️</div>
                     <h4>Vigilancia Masiva</h4>
-                    <p>La tecnología permite sistemas de control y vigilancia masiva que pueden afectar derechos fundamentales y libertades civiles sin que muchas veces los ciudadanos sean plenamente conscientes de su alcance.</p>
+                    <p>La tecnología permite sistemas de control y vigilancia masiva que pueden afectar derechos
+                        fundamentales y libertades civiles sin que muchas veces los ciudadanos sean plenamente
+                        conscientes de su alcance.</p>
                 </div>
-                
+
                 <div class="detail-card">
                     <div class="icon-box">⚠️</div>
                     <h4>Dependencia Tecnológica</h4>
-                    <p>La sociedad moderna se ha vuelto extremadamente dependiente de sistemas tecnológicos, lo que nos hace vulnerables a fallos técnicos, ciberataques o colapsos de infraestructura digital.</p>
+                    <p>La sociedad moderna se ha vuelto extremadamente dependiente de sistemas tecnológicos, lo que nos
+                        hace vulnerables a fallos técnicos, ciberataques o colapsos de infraestructura digital.</p>
                 </div>
-                
+
                 <div class="detail-card">
                     <div class="icon-box">💰</div>
                     <h4>Obsolescencia Programada</h4>
-                    <p>Muchos dispositivos son diseñados deliberadamente con una vida útil limitada, obligando a los consumidores a reemplazarlos frecuentemente, generando costos adicionales y residuos innecesarios.</p>
+                    <p>Muchos dispositivos son diseñados deliberadamente con una vida útil limitada, obligando a los
+                        consumidores a reemplazarlos frecuentemente, generando costos adicionales y residuos
+                        innecesarios.</p>
                 </div>
             </div>
         </div>
@@ -1051,54 +1119,70 @@
         <div class="container">
             <a href="#pros-contras" class="back-button">← Volver</a>
             <h2>Curiosidades <span class="color-acento">Tecnológicas</span></h2>
-            
+
             <div class="content-grid">
                 <div class="detail-card">
                     <div class="icon-box">🖥️</div>
                     <h4>La Primera Computadora</h4>
-                    <p>ENIAC, la primera computadora electrónica de propósito general, ocupaba una habitación completa y pesaba más de 27 toneladas. Consumía 150 kW de energía y podía realizar 5,000 sumas por segundo. Hoy, tu smartphone es millones de veces más potente.</p>
+                    <p>ENIAC, la primera computadora electrónica de propósito general, ocupaba una habitación completa y
+                        pesaba más de 27 toneladas. Consumía 150 kW de energía y podía realizar 5,000 sumas por segundo.
+                        Hoy, tu smartphone es millones de veces más potente.</p>
                 </div>
-                
+
                 <div class="detail-card">
                     <div class="icon-box">🌐</div>
                     <h4>El Origen Militar de Internet</h4>
-                    <p>Internet fue creado originalmente como ARPANET en 1969, un proyecto del Departamento de Defensa de Estados Unidos para mantener comunicaciones en caso de guerra nuclear. El primer mensaje enviado fue "LO" (intentaban escribir "LOGIN" pero el sistema colapsó).</p>
+                    <p>Internet fue creado originalmente como ARPANET en 1969, un proyecto del Departamento de Defensa
+                        de Estados Unidos para mantener comunicaciones en caso de guerra nuclear. El primer mensaje
+                        enviado fue "LO" (intentaban escribir "LOGIN" pero el sistema colapsó).</p>
                 </div>
-                
+
                 <div class="detail-card">
                     <div class="icon-box">🍫</div>
                     <h4>El Microondas Accidental</h4>
-                    <p>Percy Spencer descubrió el horno microondas por accidente en 1945 mientras trabajaba con radares. Notó que una barra de chocolate en su bolsillo se había derretido debido a las ondas electromagnéticas del magnetrón con el que experimentaba.</p>
+                    <p>Percy Spencer descubrió el horno microondas por accidente en 1945 mientras trabajaba con radares.
+                        Notó que una barra de chocolate en su bolsillo se había derretido debido a las ondas
+                        electromagnéticas del magnetrón con el que experimentaba.</p>
                 </div>
-                
+
                 <div class="detail-card">
                     <div class="icon-box">📸</div>
                     <h4>La Era de las Fotografías</h4>
-                    <p>Actualmente tomamos más fotografías cada dos minutos que toda la humanidad durante todo el siglo XIX. Se estima que en 2023 se tomaron más de 1.8 billones de fotos en el mundo, mayormente con smartphones.</p>
+                    <p>Actualmente tomamos más fotografías cada dos minutos que toda la humanidad durante todo el siglo
+                        XIX. Se estima que en 2023 se tomaron más de 1.8 billones de fotos en el mundo, mayormente con
+                        smartphones.</p>
                 </div>
-                
+
                 <div class="detail-card">
                     <div class="icon-box">📱</div>
                     <h4>El Primer Teléfono Móvil</h4>
-                    <p>El Motorola DynaTAC 8000X de 1983 pesaba casi 1 kilogramo, costaba $3,995 dólares (equivalente a $10,000 hoy), tenía 30 minutos de batería y requería 10 horas de carga. Solo permitía llamadas de voz.</p>
+                    <p>El Motorola DynaTAC 8000X de 1983 pesaba casi 1 kilogramo, costaba $3,995 dólares (equivalente a
+                        $10,000 hoy), tenía 30 minutos de batería y requería 10 horas de carga. Solo permitía llamadas
+                        de voz.</p>
                 </div>
-                
+
                 <div class="detail-card">
                     <div class="icon-box">🎮</div>
                     <h4>El Primer Videojuego</h4>
-                    <p>"Tennis for Two" creado en 1958 es considerado uno de los primeros videojuegos. Se mostraba en un osciloscopio y fue creado por William Higinbotham en apenas dos semanas para entretener a visitantes de un laboratorio.</p>
+                    <p>"Tennis for Two" creado en 1958 es considerado uno de los primeros videojuegos. Se mostraba en un
+                        osciloscopio y fue creado por William Higinbotham en apenas dos semanas para entretener a
+                        visitantes de un laboratorio.</p>
                 </div>
-                
+
                 <div class="detail-card">
                     <div class="icon-box">💾</div>
                     <h4>Almacenamiento Histórico</h4>
-                    <p>El primer disco duro de IBM en 1956 pesaba más de una tonelada y almacenaba solo 5 MB de datos. Hoy, una tarjeta microSD del tamaño de una uña puede almacenar 1 TB, es decir, 200,000 veces más en un espacio millones de veces menor.</p>
+                    <p>El primer disco duro de IBM en 1956 pesaba más de una tonelada y almacenaba solo 5 MB de datos.
+                        Hoy, una tarjeta microSD del tamaño de una uña puede almacenar 1 TB, es decir, 200,000 veces más
+                        en un espacio millones de veces menor.</p>
                 </div>
-                
+
                 <div class="detail-card">
                     <div class="icon-box">🖱️</div>
                     <h4>El Primer Mouse</h4>
-                    <p>Douglas Engelbart inventó el mouse en 1964 y era una caja de madera con un botón rojo. El nombre "mouse" surgió porque el cable salía por detrás, pareciendo una cola. La patente expiró antes de que se popularizaran las computadoras personales.</p>
+                    <p>Douglas Engelbart inventó el mouse en 1964 y era una caja de madera con un botón rojo. El nombre
+                        "mouse" surgió porque el cable salía por detrás, pareciendo una cola. La patente expiró antes de
+                        que se popularizaran las computadoras personales.</p>
                 </div>
             </div>
         </div>
@@ -1109,12 +1193,16 @@
             <h2>Características principales</h2>
             <ul>
                 <li>1. Novedad (Implica la creación o mejora significativa de un producto, proceso o servicio).</li>
-                <li>2. Aplicación del conocimiento científico y técnico (Se basa en descubrimientos científicos, avances técnicos o investigaciones aplicadas).</li>
+                <li>2. Aplicación del conocimiento científico y técnico (Se basa en descubrimientos científicos, avances
+                    técnicos o investigaciones aplicadas).</li>
                 <li>3. Genera valor (Aporta beneficios económicos, sociales, ambientales o de productividad).</li>
-                <li>4. Impacto en los procesos productivos o sociales (Cambia la manera en que las empresas producen o los usuarios interactúan).</li>
-                <li>5. Es dinámica y evolutiva (La tecnología siempre avanza, y con ella, las innovaciones también).</li>
+                <li>4. Impacto en los procesos productivos o sociales (Cambia la manera en que las empresas producen o
+                    los usuarios interactúan).</li>
+                <li>5. Es dinámica y evolutiva (La tecnología siempre avanza, y con ella, las innovaciones también).
+                </li>
                 <li>6. Riesgo e incertidumbre (No todas las innovaciones tecnológicas tienen éxito).</li>
-                <li>7. Interdisciplinariedad (Suele requerir la colaboración entre distintas áreas del conocimiento: ingeniería, diseño, marketing, ciencia, etc).</li>
+                <li>7. Interdisciplinariedad (Suele requerir la colaboración entre distintas áreas del conocimiento:
+                    ingeniería, diseño, marketing, ciencia, etc).</li>
             </ul>
         </div>
     </section>
@@ -1125,84 +1213,100 @@
             <div class="programas2">
                 <div class="carta2">
                     <h3>Medicina</h3>
-                    <p>La innovación tecnológica en medicina ha revolucionado diagnósticos, 
-                        tratamientos y prevención de enfermedades. Desde equipos de imagen 
-                        avanzada hasta cirugías robóticas, la tecnología salva millones de 
+                    <p>La innovación tecnológica en medicina ha revolucionado diagnósticos,
+                        tratamientos y prevención de enfermedades. Desde equipos de imagen
+                        avanzada hasta cirugías robóticas, la tecnología salva millones de
                         vidas cada año y mejora la calidad de atención médica.</p>
                     <button onclick="location.href='#medicina-detalle'">Más aquí</button>
                 </div>
                 <div class="carta2">
                     <h3>Inteligencia artificial</h3>
-                    <p>La IA está transformando industrias completas mediante el aprendizaje 
-                        automático, análisis predictivo y automatización inteligente. Desde 
-                        asistentes virtuales hasta sistemas de recomendación, la IA optimiza 
+                    <p>La IA está transformando industrias completas mediante el aprendizaje
+                        automático, análisis predictivo y automatización inteligente. Desde
+                        asistentes virtuales hasta sistemas de recomendación, la IA optimiza
                         procesos y crea nuevas posibilidades.</p>
                     <button onclick="location.href='#ia-detalle'">Más aquí</button>
                 </div>
                 <div class="carta2">
                     <h3>Y más</h3>
-                    <p>La tecnología también impacta en educación, transporte, energía, 
-                        comunicaciones y entretenimiento. Cada sector se beneficia de 
-                        innovaciones que mejoran eficiencia, accesibilidad y experiencia 
+                    <p>La tecnología también impacta en educación, transporte, energía,
+                        comunicaciones y entretenimiento. Cada sector se beneficia de
+                        innovaciones que mejoran eficiencia, accesibilidad y experiencia
                         del usuario en múltiples dimensiones.</p>
                     <button onclick="location.href='#otras-aplicaciones-detalle'">Más aquí</button>
                 </div>
-            </div>  
-        </div>      
+            </div>
+        </div>
     </section>
 
     <section id="medicina-detalle" class="section-detail">
         <div class="container">
             <a href="#aplicaciones" class="back-button">← Volver</a>
             <h2>Aplicaciones en <span class="color-acento">Medicina</span></h2>
-            
+
             <div class="content-grid">
                 <div class="detail-card">
                     <div class="icon-box">🔬</div>
                     <h4>Diagnóstico por Imagen Avanzada</h4>
-                    <p>Tecnologías como resonancia magnética (MRI), tomografía computarizada (CT) y ultrasonido de alta resolución permiten visualizar el interior del cuerpo humano con precisión milimétrica, detectando enfermedades en etapas tempranas.</p>
+                    <p>Tecnologías como resonancia magnética (MRI), tomografía computarizada (CT) y ultrasonido de alta
+                        resolución permiten visualizar el interior del cuerpo humano con precisión milimétrica,
+                        detectando enfermedades en etapas tempranas.</p>
                 </div>
-                
+
                 <div class="detail-card">
                     <div class="icon-box">🤖</div>
                     <h4>Cirugía Robótica</h4>
-                    <p>Sistemas quirúrgicos robóticos como Da Vinci permiten realizar procedimientos mínimamente invasivos con precisión submilimétrica, reduciendo tiempos de recuperación, dolor postoperatorio y riesgos de complicaciones para los pacientes.</p>
+                    <p>Sistemas quirúrgicos robóticos como Da Vinci permiten realizar procedimientos mínimamente
+                        invasivos con precisión submilimétrica, reduciendo tiempos de recuperación, dolor postoperatorio
+                        y riesgos de complicaciones para los pacientes.</p>
                 </div>
-                
+
                 <div class="detail-card">
                     <div class="icon-box">🧬</div>
                     <h4>Medicina Personalizada</h4>
-                    <p>El análisis genómico y la secuenciación de ADN permiten tratamientos personalizados basados en la composición genética individual, optimizando la efectividad de medicamentos y terapias para cada paciente específico.</p>
+                    <p>El análisis genómico y la secuenciación de ADN permiten tratamientos personalizados basados en la
+                        composición genética individual, optimizando la efectividad de medicamentos y terapias para cada
+                        paciente específico.</p>
                 </div>
-                
+
                 <div class="detail-card">
                     <div class="icon-box">💊</div>
                     <h4>Desarrollo Farmacéutico Acelerado</h4>
-                    <p>La inteligencia artificial y simulaciones computacionales aceleran el descubrimiento de nuevos medicamentos, reduciendo el tiempo y costo de desarrollo de 10-15 años a potencialmente 2-3 años.</p>
+                    <p>La inteligencia artificial y simulaciones computacionales aceleran el descubrimiento de nuevos
+                        medicamentos, reduciendo el tiempo y costo de desarrollo de 10-15 años a potencialmente 2-3
+                        años.</p>
                 </div>
-                
+
                 <div class="detail-card">
                     <div class="icon-box">📱</div>
                     <h4>Telemedicina</h4>
-                    <p>Las plataformas de consulta médica remota permiten acceso a atención de salud desde cualquier ubicación, especialmente beneficiando a comunidades rurales o con movilidad limitada, democratizando el acceso a especialistas.</p>
+                    <p>Las plataformas de consulta médica remota permiten acceso a atención de salud desde cualquier
+                        ubicación, especialmente beneficiando a comunidades rurales o con movilidad limitada,
+                        democratizando el acceso a especialistas.</p>
                 </div>
-                
+
                 <div class="detail-card">
                     <div class="icon-box">⌚</div>
                     <h4>Dispositivos de Monitoreo Continuo</h4>
-                    <p>Wearables y sensores inteligentes monitorizan constantemente signos vitales como frecuencia cardíaca, niveles de glucosa, presión arterial y patrones de sueño, alertando sobre anomalías antes de que se conviertan en emergencias.</p>
+                    <p>Wearables y sensores inteligentes monitorizan constantemente signos vitales como frecuencia
+                        cardíaca, niveles de glucosa, presión arterial y patrones de sueño, alertando sobre anomalías
+                        antes de que se conviertan en emergencias.</p>
                 </div>
-                
+
                 <div class="detail-card">
                     <div class="icon-box">🦾</div>
                     <h4>Prótesis Inteligentes</h4>
-                    <p>Las prótesis biónicas modernas conectadas al sistema nervioso permiten movimientos naturales y proporcionan retroalimentación sensorial, restaurando funcionalidad y mejorando significativamente la calidad de vida.</p>
+                    <p>Las prótesis biónicas modernas conectadas al sistema nervioso permiten movimientos naturales y
+                        proporcionan retroalimentación sensorial, restaurando funcionalidad y mejorando
+                        significativamente la calidad de vida.</p>
                 </div>
-                
+
                 <div class="detail-card">
                     <div class="icon-box">🧠</div>
                     <h4>Neurotecnología</h4>
-                    <p>Interfaces cerebro-computadora y estimulación cerebral profunda están revolucionando el tratamiento de condiciones neurológicas como Parkinson, epilepsia y depresión resistente a tratamientos convencionales.</p>
+                    <p>Interfaces cerebro-computadora y estimulación cerebral profunda están revolucionando el
+                        tratamiento de condiciones neurológicas como Parkinson, epilepsia y depresión resistente a
+                        tratamientos convencionales.</p>
                 </div>
             </div>
         </div>
@@ -1212,54 +1316,69 @@
         <div class="container">
             <a href="#aplicaciones" class="back-button">← Volver</a>
             <h2>Aplicaciones de <span class="color-acento">Inteligencia Artificial</span></h2>
-            
+
             <div class="content-grid">
                 <div class="detail-card">
                     <div class="icon-box">💬</div>
                     <h4>Asistentes Virtuales</h4>
-                    <p>Los asistentes de voz como Siri, Alexa y Google Assistant utilizan procesamiento de lenguaje natural para comprender y responder solicitudes, controlando dispositivos inteligentes, proporcionando información y automatizando tareas cotidianas.</p>
+                    <p>Los asistentes de voz como Siri, Alexa y Google Assistant utilizan procesamiento de lenguaje
+                        natural para comprender y responder solicitudes, controlando dispositivos inteligentes,
+                        proporcionando información y automatizando tareas cotidianas.</p>
                 </div>
-                
+
                 <div class="detail-card">
                     <div class="icon-box">🚗</div>
                     <h4>Vehículos Autónomos</h4>
-                    <p>La IA permite que los vehículos perciban su entorno, tomen decisiones en tiempo real y naveguen de forma autónoma, prometiendo reducir accidentes causados por error humano y revolucionar el transporte urbano.</p>
+                    <p>La IA permite que los vehículos perciban su entorno, tomen decisiones en tiempo real y naveguen
+                        de forma autónoma, prometiendo reducir accidentes causados por error humano y revolucionar el
+                        transporte urbano.</p>
                 </div>
-                
+
                 <div class="detail-card">
                     <div class="icon-box">🎯</div>
                     <h4>Sistemas de Recomendación</h4>
-                    <p>Algoritmos de machine learning analizan preferencias y comportamientos para recomendar contenido personalizado en plataformas como Netflix, Spotify, Amazon y YouTube, mejorando la experiencia del usuario.</p>
+                    <p>Algoritmos de machine learning analizan preferencias y comportamientos para recomendar contenido
+                        personalizado en plataformas como Netflix, Spotify, Amazon y YouTube, mejorando la experiencia
+                        del usuario.</p>
                 </div>
-                
+
                 <div class="detail-card">
                     <div class="icon-box">🔐</div>
                     <h4>Ciberseguridad</h4>
-                    <p>La IA detecta patrones anómalos y amenazas de seguridad en tiempo real, identificando y neutralizando ataques cibernéticos antes de que causen daño, adaptándose continuamente a nuevas tácticas de hackers.</p>
+                    <p>La IA detecta patrones anómalos y amenazas de seguridad en tiempo real, identificando y
+                        neutralizando ataques cibernéticos antes de que causen daño, adaptándose continuamente a nuevas
+                        tácticas de hackers.</p>
                 </div>
-                
+
                 <div class="detail-card">
                     <div class="icon-box">🏭</div>
                     <h4>Manufactura Inteligente</h4>
-                    <p>Robots industriales con IA optimizan líneas de producción, realizan control de calidad visual, predicen mantenimientos necesarios y se adaptan a diferentes tareas sin reprogramación manual extensiva.</p>
+                    <p>Robots industriales con IA optimizan líneas de producción, realizan control de calidad visual,
+                        predicen mantenimientos necesarios y se adaptan a diferentes tareas sin reprogramación manual
+                        extensiva.</p>
                 </div>
-                
+
                 <div class="detail-card">
                     <div class="icon-box">💰</div>
                     <h4>Finanzas y Trading</h4>
-                    <p>Algoritmos de IA analizan mercados financieros, detectan fraudes, evalúan riesgos crediticios y ejecutan operaciones de trading en microsegundos, procesando volúmenes de datos imposibles para humanos.</p>
+                    <p>Algoritmos de IA analizan mercados financieros, detectan fraudes, evalúan riesgos crediticios y
+                        ejecutan operaciones de trading en microsegundos, procesando volúmenes de datos imposibles para
+                        humanos.</p>
                 </div>
-                
+
                 <div class="detail-card">
                     <div class="icon-box">🎨</div>
                     <h4>Creación de Contenido</h4>
-                    <p>Modelos generativos como DALL-E, Midjourney y ChatGPT crean imágenes, textos, música y videos originales, asistiendo a artistas, diseñadores y creadores de contenido en sus procesos creativos.</p>
+                    <p>Modelos generativos como DALL-E, Midjourney y ChatGPT crean imágenes, textos, música y videos
+                        originales, asistiendo a artistas, diseñadores y creadores de contenido en sus procesos
+                        creativos.</p>
                 </div>
-                
+
                 <div class="detail-card">
                     <div class="icon-box">🌾</div>
                     <h4>Agricultura de Precisión</h4>
-                    <p>Drones y sensores con IA monitorizan cultivos, optimizan riego, detectan plagas tempranamente y predicen rendimientos, maximizando producción mientras minimizan uso de recursos y químicos.</p>
+                    <p>Drones y sensores con IA monitorizan cultivos, optimizan riego, detectan plagas tempranamente y
+                        predicen rendimientos, maximizando producción mientras minimizan uso de recursos y químicos.</p>
                 </div>
             </div>
         </div>
@@ -1269,171 +1388,748 @@
         <div class="container">
             <a href="#aplicaciones" class="back-button">← Volver</a>
             <h2>Otras <span class="color-acento">Aplicaciones</span> Tecnológicas</h2>
-            
+
             <div class="content-grid">
                 <div class="detail-card">
                     <div class="icon-box">🎓</div>
                     <h4>Educación Digital</h4>
-                    <p>Plataformas de e-learning, realidad virtual educativa y sistemas adaptativos de aprendizaje personalizan la experiencia educativa, permitiendo que millones accedan a educación de calidad desde cualquier lugar del mundo.</p>
+                    <p>Plataformas de e-learning, realidad virtual educativa y sistemas adaptativos de aprendizaje
+                        personalizan la experiencia educativa, permitiendo que millones accedan a educación de calidad
+                        desde cualquier lugar del mundo.</p>
                 </div>
-                
+
                 <div class="detail-card">
                     <div class="icon-box">⚡</div>
                     <h4>Energías Renovables</h4>
-                    <p>Tecnologías de paneles solares avanzados, turbinas eólicas inteligentes y sistemas de almacenamiento de baterías están haciendo la energía limpia más eficiente y económicamente viable que los combustibles fósiles.</p>
+                    <p>Tecnologías de paneles solares avanzados, turbinas eólicas inteligentes y sistemas de
+                        almacenamiento de baterías están haciendo la energía limpia más eficiente y económicamente
+                        viable que los combustibles fósiles.</p>
                 </div>
-                
+
                 <div class="detail-card">
                     <div class="icon-box">🏠</div>
                     <h4>Domótica y Smart Homes</h4>
-                    <p>Hogares inteligentes integran dispositivos IoT para controlar iluminación, climatización, seguridad y electrodomésticos, optimizando confort, seguridad y eficiencia energética mediante automatización inteligente.</p>
+                    <p>Hogares inteligentes integran dispositivos IoT para controlar iluminación, climatización,
+                        seguridad y electrodomésticos, optimizando confort, seguridad y eficiencia energética mediante
+                        automatización inteligente.</p>
                 </div>
-                
+
                 <div class="detail-card">
                     <div class="icon-box">🚇</div>
                     <h4>Transporte Urbano Inteligente</h4>
-                    <p>Sistemas de gestión de tráfico con IA, aplicaciones de movilidad compartida y transporte público conectado optimizan flujos vehiculares, reducen congestión y emisiones en ciudades.</p>
+                    <p>Sistemas de gestión de tráfico con IA, aplicaciones de movilidad compartida y transporte público
+                        conectado optimizan flujos vehiculares, reducen congestión y emisiones en ciudades.</p>
                 </div>
-                
+
                 <div class="detail-card">
                     <div class="icon-box">🎮</div>
                     <h4>Entretenimiento Inmersivo</h4>
-                    <p>Realidad virtual (VR) y aumentada (AR) crean experiencias inmersivas en videojuegos, cine y eventos en vivo, transformando completamente cómo consumimos y participamos en entretenimiento digital.</p>
+                    <p>Realidad virtual (VR) y aumentada (AR) crean experiencias inmersivas en videojuegos, cine y
+                        eventos en vivo, transformando completamente cómo consumimos y participamos en entretenimiento
+                        digital.</p>
                 </div>
-                
+
                 <div class="detail-card">
                     <div class="icon-box">🏪</div>
                     <h4>Comercio Electrónico</h4>
-                    <p>Plataformas de e-commerce, pagos digitales, logística automatizada y realidad aumentada para "probar" productos virtualmente han revolucionado cómo compramos, eliminando barreras geográficas.</p>
+                    <p>Plataformas de e-commerce, pagos digitales, logística automatizada y realidad aumentada para
+                        "probar" productos virtualmente han revolucionado cómo compramos, eliminando barreras
+                        geográficas.</p>
                 </div>
-                
+
                 <div class="detail-card">
                     <div class="icon-box">🌊</div>
                     <h4>Conservación Ambiental</h4>
-                    <p>Sensores IoT, drones y satélites monitorizan ecosistemas, rastrean especies en peligro, detectan deforestación y contaminación, proporcionando datos cruciales para esfuerzos de conservación.</p>
+                    <p>Sensores IoT, drones y satélites monitorizan ecosistemas, rastrean especies en peligro, detectan
+                        deforestación y contaminación, proporcionando datos cruciales para esfuerzos de conservación.
+                    </p>
                 </div>
-                
+
                 <div class="detail-card">
                     <div class="icon-box">🔬</div>
                     <h4>Investigación Científica</h4>
-                    <p>Supercomputadoras y simulaciones avanzadas aceleran investigación en física, química, biología y astronomía, permitiendo experimentos virtuales imposibles o costosos en el mundo real.</p>
+                    <p>Supercomputadoras y simulaciones avanzadas aceleran investigación en física, química, biología y
+                        astronomía, permitiendo experimentos virtuales imposibles o costosos en el mundo real.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section>
+    <section id="contacto">
         <section class="map-section">
             <div class="image-map-container">
-                <h2>Sígueme en <span class="color-acento">Instagram</span></h2>
-                
-                <div class="image-map-wrapper">
-                    <!-- Imagen del logo de Instagram con mapa de áreas clicables -->
-                    <img class="img" 
-                         src="https://1000marcas.net/wp-content/uploads/2019/11/Instagram-Logosu.png" 
-                         alt="Logo de Instagram" 
-                         usemap="#instagram-map">
-                    
-                    <!-- Definición del mapa de imagen -->
-                    <map name="instagram-map">
-                        
-                        <!-- Área del ícono de cámara (parte superior izquierda) -->
-                        <area shape="rect" 
-                              coords="20, 150, 100, 250" 
-                              href="https://www.instagram.com/omar_ortiz.wav?igsh=dXZteTRqYzFtcDdo" 
-                              alt="Sígueme en Instagram - Ícono"
-                              title="Visita mi perfil de Instagram"
-                              target="_blank">
-                        
-                        <!-- Área central del logo -->
-                        <area shape="rect" 
-                              coords="150, 100, 350, 350" 
-                              href="https://www.instagram.com/omar_ortiz.wav?igsh=dXZteTRqYzFtcDdo" 
-                              alt="Sígueme en Instagram - Centro"
-                              title="Visita mi perfil de Instagram"
-                              target="_blank">
-                        
-                        <!-- Área circular (puede ser el círculo interno del logo) -->
-                        <area shape="circle" 
-                              coords="400, 400, 60" 
-                              href="https://www.instagram.com/omar_ortiz.wav?igsh=dXZteTRqYzFtcDdo" 
-                              alt="Sígueme en Instagram - Círculo"
-                              title="Visita mi perfil de Instagram"
-                              target="_blank">
-                        
-                        <!-- Área por defecto (cualquier otra parte de la imagen) -->
-                        <area shape="default" 
-                              href="https://www.instagram.com/omar_ortiz.wav?igsh=dXZteTRqYzFtcDdo" 
-                              alt="Sígueme en Instagram"
-                              title="Visita mi perfil de Instagram"
-                              target="_blank">
-                    </map>
+                <h2>Contactame <span class="color-acento">aqui</span></h2>
+
+                <div class="social-maps-grid">
+                    <!-- Instagram -->
+                    <div class="image-map-wrapper">
+                        <h3>Instagram</h3>
+                        <img class="img"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1200px-Instagram_icon.png"
+                            alt="Logo de Instagram" usemap="#instagram-map">
+
+                        <map name="instagram-map">
+                            <area shape="rect" coords="20, 150, 100, 250"
+                                href="https://www.instagram.com/omar_ortiz.wav?igsh=dXZteTRqYzFtcDdo"
+                                alt="Sígueme en Instagram" title="Visita mi perfil de Instagram" target="_blank">
+
+                            <area shape="rect" coords="150, 100, 350, 350"
+                                href="https://www.instagram.com/omar_ortiz.wav?igsh=dXZteTRqYzFtcDdo"
+                                alt="Sígueme en Instagram" title="Visita mi perfil de Instagram" target="_blank">
+
+                            <area shape="circle" coords="400, 400, 60"
+                                href="https://www.instagram.com/omar_ortiz.wav?igsh=dXZteTRqYzFtcDdo"
+                                alt="Sígueme en Instagram" title="Visita mi perfil de Instagram" target="_blank">
+
+                            <area shape="default" href="https://www.instagram.com/omar_ortiz.wav?igsh=dXZteTRqYzFtcDdo"
+                                alt="Sígueme en Instagram" title="Visita mi perfil de Instagram" target="_blank">
+                        </map>
+                        <p class="social-text">📸 Instagram</p>
+                    </div>
+
+                    <!-- WhatsApp -->
+                    <div class="image-map-wrapper whatsapp">
+                        <h3>WhatsApp</h3>
+                        <img class="img" src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+                            alt="Logo de WhatsApp" usemap="#whatsapp-map">
+
+                        <map name="whatsapp-map">
+                            <area shape="circle" coords="256, 256, 200" href="https://wa.me/qr/GGOBHHCRVVJYK1"
+                                alt="Contáctame en WhatsApp" title="Envíame un mensaje" target="_blank">
+
+                            <area shape="default" href="https://wa.me/qr/GGOBHHCRVVJYK1" alt="Contáctame en WhatsApp"
+                                title="Envíame un mensaje" target="_blank">
+                        </map>
+                        <p class="social-text">💬 WhatsApp</p>
+                    </div>
+
+                    <!-- Facebook -->
+                    <div class="image-map-wrapper facebook">
+                        <h3>Facebook</h3>
+                        <img class="img"
+                            src="https://upload.wikimedia.org/wikipedia/commons/b/b9/2023_Facebook_icon.svg"
+                            alt="Logo de Facebook" usemap="#facebook-map">
+
+                        <map name="facebook-map">
+                            <area shape="circle" coords="256, 256, 200"
+                                href="https://www.facebook.com/share/1AvW3f2rz4/" alt="Sígueme en Facebook"
+                                title="Visita mi perfil de Facebook" target="_blank">
+
+                            <area shape="default" href="https://www.facebook.com/share/1AvW3f2rz4/"
+                                alt="Sígueme en Facebook" title="Visita mi perfil de Facebook" target="_blank">
+                        </map>
+                        <p class="social-text">👍 Facebook</p>
+                    </div>
                 </div>
-                
-                <p style="margin-top: 20px; color: #666; font-size: 1.1em;">
-                    Haz clic en cualquier parte del logo para visitar mi perfil 📸
+
+                <p style="margin-top: 30px; color: #666; font-size: 1.1em;">
+                    Haz clic en cualquier logo para conectar conmigo 🚀
                 </p>
             </div>
         </section>
-        
+
         <style>
-            /* Estilos específicos para el mapa de Instagram */
+            /* Estilos para la sección de mapas sociales */
             .image-map-container {
                 text-align: center;
                 margin: 60px auto;
-                max-width: 800px;
+                max-width: 1200px;
                 padding: 0 20px;
             }
-        
+
             .image-map-container h2 {
                 font-size: 2.5em;
-                margin-bottom: 30px;
+                margin-bottom: 50px;
                 color: #333;
             }
-        
+
+            .social-maps-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                gap: 40px;
+                margin: 0 auto;
+                max-width: 1000px;
+            }
+
             .image-map-wrapper {
-                display: inline-block;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
                 border-radius: 15px;
-                box-shadow: 0 8px 30px rgba(225, 48, 108, 0.3);
+                box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
                 overflow: hidden;
                 transition: all 0.3s ease;
-                background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
-                padding: 20px;
+                padding: 25px;
+                background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
             }
-        
+
+            /* Gradientes específicos por red social */
+            .image-map-wrapper:nth-child(1) {
+                background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            }
+
+            .image-map-wrapper.whatsapp {
+                background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+            }
+
+            .image-map-wrapper.facebook {
+                background: linear-gradient(135deg, #1877F2 0%, #0C63D4 100%);
+            }
+
+            .image-map-wrapper h3 {
+                color: white;
+                font-size: 1.5em;
+                margin: 0 0 15px 0;
+                font-weight: 600;
+            }
+
             .image-map-wrapper:hover {
-                box-shadow: 0 12px 40px rgba(225, 48, 108, 0.5);
-                transform: translateY(-5px) scale(1.02);
+                box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+                transform: translateY(-8px) scale(1.03);
             }
-        
+
             .image-map-wrapper img {
-                max-width: 100%;
-                height: auto;
+                max-width: 200px;
+                height: 200px;
                 display: block;
                 border-radius: 10px;
                 background: white;
-                padding: 10px;
+                padding: 20px;
+                cursor: pointer;
+                transition: transform 0.3s ease;
             }
-        
+
+            .image-map-wrapper img:hover {
+                transform: scale(1.05);
+            }
+
+            .social-text {
+                margin-top: 15px;
+                color: white;
+                font-size: 1.1em;
+                font-weight: 500;
+            }
+
             .map-section {
                 background: linear-gradient(135deg, #f9f9f9, white);
                 padding: 60px 20px;
                 margin: 40px 0;
                 border-radius: 20px;
             }
-        
+
+
             @media (max-width: 768px) {
                 .image-map-container h2 {
                     font-size: 2em;
                 }
-                
+
+                .social-maps-grid {
+                    grid-template-columns: 1fr;
+                    gap: 30px;
+                }
+
                 .image-map-wrapper {
-                    padding: 15px;
+                    padding: 20px;
+                }
+
+                .image-map-wrapper img {
+                    max-width: 180px;
+                    height: 180px;
                 }
             }
         </style>
     </section>
 
+    <!--formulario-->
+    <!-- INICIO SECCIÓN FORMULARIO - Pegar antes del footer -->
+<section id="comentarios">
+    <div class="container">
+        <h2>Déjanos tus <span class="color-acento">Comentarios</span></h2>
+        <p style="text-align: center; margin-bottom: 40px; font-size: 1.2em; color: #666;">
+            Tu opinión es importante para nosotros. Comparte tus ideas, sugerencias o experiencias.
+        </p>
+
+        <div class="formulario-wrapper">
+            <form id="form-comentarios" class="comentarios-form" action="https://formspree.io/f/meowdblb" method="POST">
+                <div class="form-group">
+                    <label for="nombre">
+                        <span class="icon">👤</span>
+                        Nombre Completo
+                    </label>
+                    <input type="text" id="nombre" name="nombre" required 
+                           placeholder="Escribe tu nombre completo">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">
+                        <span class="icon">📧</span>
+                        Correo Electrónico
+                    </label>
+                    <input type="email" id="email" name="email" required 
+                           placeholder="tu@email.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="asunto">
+                        <span class="icon">📝</span>
+                        Asunto
+                    </label>
+                    <select id="asunto" name="asunto" required>
+                        <option value="">Selecciona un asunto</option>
+                        <option value="sugerencia">Sugerencia</option>
+                        <option value="pregunta">Pregunta</option>
+                        <option value="opinion">Opinión</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="comentario">
+                        <span class="icon">💬</span>
+                        Tu Comentario
+                    </label>
+                    <textarea id="comentario" name="comentario" rows="6" required 
+                              placeholder="Escribe aquí tu comentario..."></textarea>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="privacidad" name="privacidad" required>
+                        <span class="checkmark"></span>
+                        Acepto la política de privacidad y el tratamiento de mis datos
+                    </label>
+                </div>
+
+                <button type="submit" id="submit-btn-form">
+                    <span>Enviar Comentario</span>
+                    <span class="btn-icon">✉️</span>
+                </button>
+            </form>
+
+            <div id="mensaje-exito-form" class="mensaje-oculto-form mensaje-exito-form">
+                <div class="mensaje-contenido-form">
+                    <span class="mensaje-icon-form">✅</span>
+                    <h3>¡Comentario Enviado!</h3>
+                    <p>Gracias por compartir tu opinión con nosotros.<br>Te responderemos pronto.</p>
+                </div>
+            </div>
+
+            <div id="mensaje-error-form" class="mensaje-oculto-form mensaje-error-form">
+                <div class="mensaje-contenido-form">
+                    <span class="mensaje-icon-form">❌</span>
+                    <h3>Error al enviar</h3>
+                    <p id="error-texto-form">Hubo un problema al enviar tu comentario.<br>Por favor, intenta nuevamente.</p>
+                    <button class="retry-btn-form" onclick="reiniciarFormularioComentarios()">Intentar de nuevo</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    /* ESTILOS PARA LA SECCIÓN DE COMENTARIOS */
+    #comentarios {
+        background: linear-gradient(135deg, #f9f9f9, white);
+        padding: 80px 20px;
+        margin: 40px 0;
+        border-radius: 20px;
+    }
+
+    #comentarios .container {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    #comentarios h2 {
+        text-align: center;
+        font-size: 3em;
+        margin-bottom: 20px;
+    }
+
+    .formulario-wrapper {
+        background: white;
+        padding: 50px;
+        border-radius: 20px;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+        position: relative;
+    }
+
+    .formulario-wrapper:hover {
+        box-shadow: 0 15px 50px rgba(138, 43, 226, 0.2);
+        transform: translateY(-5px);
+    }
+
+    .comentarios-form {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .form-group label {
+        font-size: 1.2em;
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .form-group .icon {
+        font-size: 1.3em;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        font-size: 1.1em;
+        padding: 15px 20px;
+        border: 2px solid #e0e0e0;
+        border-radius: 10px;
+        font-family: 'Roboto', sans-serif;
+        transition: all 0.3s ease;
+        background: #fafafa;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+        outline: none;
+        border-color: blueviolet;
+        background: white;
+        box-shadow: 0 0 0 3px rgba(138, 43, 226, 0.1);
+        transform: translateY(-2px);
+    }
+
+    .form-group textarea {
+        resize: vertical;
+        min-height: 120px;
+    }
+
+    .form-group select {
+        cursor: pointer;
+    }
+
+    .checkbox-group {
+        margin: 10px 0;
+    }
+
+    .checkbox-label {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        user-select: none;
+        font-size: 1em;
+        font-weight: normal;
+        gap: 12px;
+        position: relative;
+        padding-left: 35px;
+    }
+
+    .checkbox-label input[type="checkbox"] {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+
+    .checkmark {
+        position: absolute;
+        left: 0;
+        height: 24px;
+        width: 24px;
+        background-color: #fafafa;
+        border: 2px solid #e0e0e0;
+        border-radius: 6px;
+        transition: all 0.3s ease;
+    }
+
+    .checkbox-label:hover input ~ .checkmark {
+        background-color: #f0f0f0;
+        border-color: blueviolet;
+    }
+
+    .checkbox-label input:checked ~ .checkmark {
+        background: linear-gradient(135deg, blueviolet 0%, #9b59b6 100%);
+        border-color: blueviolet;
+    }
+
+    .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+        left: 7px;
+        top: 3px;
+        width: 6px;
+        height: 11px;
+        border: solid white;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+    }
+
+    .checkbox-label input:checked ~ .checkmark:after {
+        display: block;
+    }
+
+    #submit-btn-form {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    #submit-btn-form:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+    }
+
+    .btn-icon {
+        transition: transform 0.3s ease;
+        position: relative;
+        z-index: 1;
+    }
+
+    #submit-btn-form:hover .btn-icon {
+        transform: translateX(5px);
+    }
+
+    .mensaje-oculto-form {
+        display: none;
+    }
+
+    .mensaje-exito-form,
+    .mensaje-error-form {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: white;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        animation: fadeInForm 0.5s ease;
+    }
+
+    .mensaje-contenido-form {
+        text-align: center;
+        padding: 40px;
+    }
+
+    .mensaje-icon-form {
+        font-size: 4em;
+        display: block;
+        margin-bottom: 20px;
+        animation: scaleInForm 0.5s ease;
+    }
+
+    .mensaje-contenido-form h3 {
+        color: blueviolet;
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+
+    .mensaje-error-form .mensaje-contenido-form h3 {
+        color: #ff4444;
+    }
+
+    .mensaje-contenido-form p {
+        font-size: 1.2em;
+        color: #666;
+        line-height: 1.6;
+        text-align: center;
+    }
+
+    .retry-btn-form {
+        margin-top: 20px;
+        font-size: 1.1em;
+        padding: 12px 30px;
+    }
+
+    @keyframes fadeInForm {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes scaleInForm {
+        from {
+            transform: scale(0);
+        }
+        to {
+            transform: scale(1);
+        }
+    }
+
+    .form-group input:invalid:not(:placeholder-shown),
+    .form-group select:invalid:not(:placeholder-shown),
+    .form-group textarea:invalid:not(:placeholder-shown) {
+        border-color: #ff4444;
+    }
+
+    .form-group input:valid:not(:placeholder-shown),
+    .form-group select:valid:not(:focus),
+    .form-group textarea:valid:not(:placeholder-shown) {
+        border-color: #00C851;
+    }
+
+    .loading-spinner-form {
+        border: 3px solid #f3f3f3;
+        border-top: 3px solid blueviolet;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        animation: spinForm 1s linear infinite;
+        display: inline-block;
+        margin-left: 10px;
+    }
+
+    @keyframes spinForm {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+
+    @media (max-width: 768px) {
+        #comentarios h2 {
+            font-size: 2.2em;
+        }
+
+        .formulario-wrapper {
+            padding: 30px 20px;
+        }
+
+        .form-group label {
+            font-size: 1.1em;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            font-size: 1em;
+            padding: 12px 15px;
+        }
+
+        #submit-btn-form {
+            font-size: 1.2em;
+        }
+
+        .mensaje-icon-form {
+            font-size: 3em;
+        }
+
+        .mensaje-contenido-form h3 {
+            font-size: 1.5em;
+        }
+
+        .mensaje-contenido-form p {
+            font-size: 1em;
+        }
+    }
+</style>
+
+<script>
+    // SCRIPT PARA EL FORMULARIO DE COMENTARIOS
+    (function() {
+        const form = document.getElementById('form-comentarios');
+        const submitBtn = document.getElementById('submit-btn-form');
+        const mensajeExito = document.getElementById('mensaje-exito-form');
+        const mensajeError = document.getElementById('mensaje-error-form');
+        const errorTexto = document.getElementById('error-texto-form');
+
+        // Validación en tiempo real
+        const inputs = document.querySelectorAll('#form-comentarios input:not([type="checkbox"]), #form-comentarios select, #form-comentarios textarea');
+        
+        inputs.forEach(input => {
+            input.addEventListener('blur', function() {
+                if (this.value.trim() !== '') {
+                    this.style.borderColor = this.checkValidity() ? '#00C851' : '#ff4444';
+                }
+            });
+            
+            input.addEventListener('input', function() {
+                if (this.style.borderColor === 'rgb(255, 68, 68)') {
+                    this.style.borderColor = this.checkValidity() ? '#00C851' : '#ff4444';
+                }
+            });
+        });
+
+        // Manejo del envío del formulario
+        form.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            // Deshabilitar botón y mostrar loading
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<span>Enviando</span><div class="loading-spinner-form"></div>';
+            
+            try {
+                const formData = new FormData(form);
+                
+                const response = await fetch(form.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+                
+                if (response.ok) {
+                    // Éxito
+                    form.style.display = 'none';
+                    mensajeExito.classList.remove('mensaje-oculto-form');
+                    mensajeExito.style.display = 'flex';
+                    
+                    // Reiniciar después de 4 segundos
+                    setTimeout(function() {
+                        window.reiniciarFormularioComentarios();
+                    }, 4000);
+                } else {
+                    // Error del servidor
+                    throw new Error('Error en la respuesta del servidor');
+                }
+            } catch (error) {
+                // Error de red o del servidor
+                console.error('Error:', error);
+                form.style.display = 'none';
+                mensajeError.classList.remove('mensaje-oculto-form');
+                mensajeError.style.display = 'flex';
+                errorTexto.innerHTML = 'Hubo un problema al enviar tu comentario.<br>Por favor, verifica tu conexión e intenta nuevamente.';
+            } finally {
+                // Restaurar botón
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = '<span>Enviar Comentario</span><span class="btn-icon">✉️</span>';
+            }
+        });
+
+        // Función global para reiniciar
+        window.reiniciarFormularioComentarios = function() {
+            form.reset();
+            form.style.display = 'flex';
+            mensajeExito.classList.add('mensaje-oculto-form');
+            mensajeExito.style.display = 'none';
+            mensajeError.classList.add('mensaje-oculto-form');
+            mensajeError.style.display = 'none';
+            
+            // Limpiar estilos de validación
+            inputs.forEach(input => {
+                input.style.borderColor = '';
+            });
+        };
+    })();
+</script>
+    
     <footer>
         <div class="container">
             <p>&copy; 2025 Ortiz L&oacute;pez Omar Alejandro - Innovación Tecnológica</p>
@@ -1441,7 +2137,7 @@
     </footer>
 
     <script>
-        window.addEventListener('scroll', function() {
+        window.addEventListener('scroll', function () {
             const header = document.querySelector('header');
             if (window.scrollY > 50) {
                 header.classList.add('scrolled');
@@ -1450,5 +2146,6 @@
             }
         });
     </script>
-</body>
+</body> 
+
 </html>
